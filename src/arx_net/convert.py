@@ -60,16 +60,16 @@ def convert_type(input_graph, to, directed=None, weighted=None, from_type=None):
     Convert between graph representations seamlessly.
 
     Args:
-        input_graph : Input graph in any supported format —
+        input_graph : Input graph in any supported format -
             Adjacency list  : { node: [neighbor, ...] } or { node: [(neighbor, weight), ...] }
             Edge list       : [(src, tgt), ...] or [(src, tgt, weight), ...]
                               or list of dicts with 'source'/'target'/'weight' keys (parse_edges output)
             Matrix          : 2D list  (nodes = row/col indices)
                               or dict-of-dicts { src: { tgt: weight } }
-        to          : Target format — 'adj', 'edge', or 'matrix'
+        to          : Target format - 'adj', 'edge', or 'matrix'
         directed    : bool. Auto-detected from input symmetry if None.
         weighted    : bool. Auto-detected from input structure if None.
-        from_type   : Input format — 'adj', 'edge', or 'matrix'. Auto-detected if None.
+        from_type   : Input format - 'adj', 'edge', or 'matrix'. Auto-detected if None.
                       ('from' is a Python keyword, so from_type is used instead.)
 
     Returns:
