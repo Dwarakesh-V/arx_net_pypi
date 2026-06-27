@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arx-net"
+version = "0.1.0"
+description = "Graph parsing for arx net (https://dwarakesh-v.github.io/arx-net/) and graph representation conversion library."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+
+keywords = [
+    "arx-net",
+    "graph",
+    "network",
+    "adjacency",
+    "graph-parser"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
